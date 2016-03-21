@@ -1,0 +1,437 @@
+@charset "utf-8";
+/* CSS Document */
+html { 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+body {
+    Background-color:   #F5F4F4;
+}
+
+a {
+	color: #89D7ED;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #F5F4F4;
+}
+
+#Container{
+	width: 1000px;
+	height: 800px;
+	margin: -15px 0px 0px 150px;
+}
+
+#BContainer{
+	width: 1000px;
+	height: 100px;
+}
+
+#Banner{
+	color: red;
+    width: 1000px;
+    height: 100px;
+    color: #fff;
+    background-image: url("Banner3.png");
+	border-radius: 0px 0px 10px 10px;
+}
+
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+ 
+.DropDownNav {
+	float: left;
+	height: 100px;
+    width: 0px;
+	background-color: #000000;
+}
+
+.menu li {
+    margin: 0px;
+    list-style: none;
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration: none;
+    color: #89D7ED;
+}
+
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+	
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow: #D48C8D;
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background-color: rgba(243,243,243, 0.75);
+	text-color: #000;
+	height: 30px;
+	width: 90px;
+	margin: 34px 0px 0px -40px;
+	border-radius: 0px 10px 0px 10px;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160px;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 5px 5px, #333;
+    background-color: rgba(193, 211, 200,0.95);
+	margin: 0px 0px 0px -30px;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display: block;
+	text-decoration: none;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background-color: #F5F4F4;
+}
+
+
+#ContainerMain{
+	width: 1000px;
+	height: 980px;
+}
+
+#Display{
+    width: 980px;
+    height: 400px;
+    color: #fff;
+    background-image: url("DisplayImg12.jp");
+    text-align: center; 
+	margin: 10px;
+}
+
+.fadein { position:relative; height:980px; width:440px; outline: 0px solid blue; }
+.fadein img { position:absolute; left:0; top:0; transition:opacity 1s; opacity:1; }
+.fadein img.is-hidden { opacity:0; }
+
+#Display1{
+    width: 980px;
+    height: 440px;
+    color: #fff;
+    background: #5C6983;
+    text-align: center; 
+	margin: 10px;
+}
+
+#Display2{
+    width: 980px;
+    height: 500px;
+    color: #fff;
+    background: #5C6983;
+    text-align: center; 
+	margin: 10px;
+}
+
+#Display3{
+    width: 980px;
+    height: 570px;
+    color: #fff;
+    background: #5C6983;
+    text-align: center; 
+	margin: 10px;
+}
+
+#Display4{
+    width: 980px;
+    height: 290px;
+    color: #fff;
+    background: #5C6983;
+    text-align: center; 
+	margin: 10px;
+}
+
+#DisTitle {
+	width: 980px;
+    height: 30px;
+	background-color: #6A5A5B;
+}
+
+#DisTitle > h2 {
+	color: #F5F4F4;
+}
+
+
+#DisContent {
+	width: 650px;
+	background-color: none;
+	margin: 10px;
+	text-align: left;
+	float: left;
+	border-radius: 5px;
+}
+
+#DisContent1 {
+	width: 400px;
+	background-color: none;
+	margin: 10px;
+	text-align: left;
+	float: left;
+	border-radius: 5px;
+}
+
+#DisContent2 {
+	width: 960px;
+	background-color: none;
+	margin: 10px;
+	text-align: left;
+	float: left;
+	border-radius: 5px;
+}
+
+#DisContent3 {
+	width: 500px;
+	background-color: none;
+	margin: 10px;
+	text-align: left;
+	float: left;
+	border-radius: 5px;
+}
+
+#CosGrid {
+	Width: 200px;
+	height: auto;
+	float: left;	
+}
+
+#SizeGrid {
+	Width: 40px;
+	height: auto;
+	float: left;	
+}
+
+#PriceGrid {
+	Width: 40px;
+	height: auto;
+	float: left;	
+}
+
+#SignUpText{
+	width: 280px;
+	float:left;
+	margin: 10px;
+}
+
+#SignUpInput {
+	width: 180px;
+	float: left;
+	margin: 10px;
+}
+
+#SignUpSubmit {
+	float: left;
+	color: red;
+}
+
+#DisImage {
+	width: 250px;
+	height: 370px;
+	background-image: url("CosplayImg12.png");
+	float: right;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#DisImage1 {
+	width: 250px;
+	height: 370px;
+	background-image: url("AboutUsImg12.png");
+	float: right;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#DisImage2 {
+	width: 250px;
+	height: 370px;
+	background-image: url("CostumesImg12.png");
+	float: right;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#DisImage22 {
+	width: 250px;
+	height: 370px;
+	background-image: url("CostumesImg22.jpg");
+	float: right;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#DisImage3 {
+	width: 450px;
+	height: 320px;
+	background-image: url("PartImg1.jpg");
+	float: left;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#DisImage33 {
+	width: 480px;
+	height: 320px;
+	background-image: url("partImg12.jpg");
+	float: right;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#DisImage4 {
+	width: 440px;
+	height: 240px;
+	background-image: url("SignUpImg1.jpg");
+	float: right;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#DisImage5 {
+	width: 192px;
+	height: 144px;
+	background-image: url("SRImg1.jpg");
+	float: left;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#DisImage55 {
+	width: 128px;
+	height: 153px;
+	background-image: url("SRImg2.jpg");
+	float: ;
+	margin: 280px 0px 0px 10px;
+	border-radius: 5px;
+}
+
+#Announcement{
+	float: left;
+    width: 480px;
+    height: 250px;
+    color: #fff;
+    background-color:  #5C6983;
+    text-align: center;
+	margin: 10px; 
+}
+
+#AnnTitle {
+	width: 480px;
+    height: 30px;
+	background-color:  #6A5A5B;
+	margin: -19px 0px 0px 0px;
+}
+
+#AnnTitle > h3 {
+	color: #F5F4F4;
+}
+
+#AnnContent {
+	width: 460px;
+	background-color: none);
+	margin: 10px;
+	text-align: left;
+	border-radius: 5px;
+}
+
+#Event {
+	color: red;
+	float: right;
+    width: 480px;
+    height: 250px;
+    color: #fff;
+    background-color:  #5C6983;
+    text-align: center;
+	margin: 10px; 
+}
+
+#EventTitle {
+	width: 480px;
+    height: 30px;
+	background-color: #6A5A5B;
+	margin: -19px 0px 0px 0px;
+}
+
+#EventTitle > h3 {
+	color: #F5F4F4;
+}
+
+#EvContent {
+	width: 460px;
+	background-color: none;
+	margin: 10px;
+	text-align: left;
+	border-radius: 5px; 
+}
+
+#Footer {
+    width: 1000px;
+    height: 100px;
+    background: #C1D3C8;
+    text-align: center; 
+	border-radius: 10px 10px 0px 0px;
+}
+
+#FootContent {
+	text-align: left;
+	width: 980px;
+	height: 80px;
+	margin: 10px;
+}
+
+#FootAdd {
+	width: 300px;
+	height: 60px;
+	float: right;	
+	margin: 10px;
+}
+
+#FootEmail {
+	width: 290px;
+	height: 60px;
+	float: left;
+	margin: 10px;
+}
+
+#FootPhone {
+	width: 320px;
+	height: 60px;
+	float: left;
+	margin: 10px;
+}
